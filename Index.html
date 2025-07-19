@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Doctor Kanchana Vet Clinic</title>
+    <title>Modesh Hot Cafe - Premium Teas & Coffees</title>
     <style>
         /* CSS */
         * {
@@ -14,15 +14,14 @@
         }
 
         body {
-            background: #f4f9f9;
-            color: #333;
             line-height: 1.6;
+            background: #fff5e6;
         }
 
         /* Header */
         header {
-            background: #2a9d8f;
-            color: #fff;
+            background: #3c2005;
+            color: #fff5e6;
             padding: 1rem;
             position: sticky;
             top: 0;
@@ -39,7 +38,7 @@
 
         nav h1 {
             font-size: 1.8rem;
-            color: #e9c46a;
+            color: #ff9f43;
         }
 
         nav ul {
@@ -52,25 +51,25 @@
         }
 
         nav ul li a {
-            color: #fff;
+            color: #fff5e6;
             text-decoration: none;
             transition: color 0.3s;
         }
 
         nav ul li a:hover {
-            color: #e9c46a;
+            color: #ff9f43;
         }
 
         /* Hero Section with Wave Effect */
         .hero {
             position: relative;
-            background: linear-gradient(180deg, #2a9d8f, #264653);
+            background: linear-gradient(180deg, #ff9f43, #d35400);
             height: 500px;
             display: flex;
             align-items: center;
             justify-content: center;
             text-align: center;
-            color: #fff;
+            color: #fff5e6;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
             overflow: hidden;
         }
@@ -80,21 +79,22 @@
         }
 
         .hero h2 {
-            font-size: 3rem;
+            font-size: 3.5rem;
             margin-bottom: 1rem;
         }
 
         .hero p {
-            font-size: 1.2rem;
+            font-size: 1.3rem;
         }
 
+        /* Wave Effect */
         .wave {
             position: absolute;
             bottom: 0;
             left: 0;
             width: 100%;
             height: 100px;
-            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%23f4f9f9' fill-opacity='1' d='M0,192L48,176C96,160,192,128,288,149.3C384,171,480,245,576,256C672,267,768,213,864,181.3C960,149,1056,139,1152,149.3C1248,160,1344,192,1392,208L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z'%3E%3C/path%3E%3C/svg%3E");
+            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%23fff5e6' fill-opacity='1' d='M0,192L48,176C96,160,192,128,288,149.3C384,171,480,245,576,256C672,267,768,213,864,181.3C960,149,1056,139,1152,149.3C1248,160,1344,192,1392,208L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z'%3E%3C/path%3E%3C/svg%3E");
             background-size: cover;
             animation: wave 7s linear infinite;
         }
@@ -104,67 +104,88 @@
             100% { transform: translateX(-1440px); }
         }
 
-        /* Services Section */
-        .services {
+        /* Products Section */
+        .products {
             max-width: 1200px;
             margin: 2rem auto;
             padding: 0 1rem;
         }
 
-        .services h2 {
+        .products h2 {
             text-align: center;
             margin-bottom: 2rem;
-            color: #264653;
+            color: #3c2005;
         }
 
-        .service-grid {
+        .product-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 2rem;
         }
 
-        .service-card {
-            background: #fff;
+        .product-card {
+            background: #ffffff;
             padding: 1rem;
-            border-radius: 8px;
+            border-radius: 12px;
             text-align: center;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s;
         }
 
-        .service-card:hover {
+        .product-card:hover {
             transform: scale(1.05);
         }
 
-        .service-card img {
+        .product-card img {
             width: 100%;
             height: 200px;
             object-fit: cover;
             border-radius: 8px;
         }
 
-        .service-card h3 {
+        .product-card h3 {
             margin: 1rem 0 0.5rem;
-            color: #264653;
+            color: #3c2005;
         }
 
-        .service-card p {
+        .product-card p {
             color: #7f8c8d;
         }
 
-        /* Appointment Section */
-        .appointment {
-            background: #e9c46a;
+        .product-card .price {
+            font-weight: bold;
+            color: #d35400;
+            margin: 0.5rem 0;
+        }
+
+        .product-card button {
+            background: #ff9f43;
+            border: none;
+            padding: 0.5rem 1rem;
+            margin: 0.5rem;
+            cursor: pointer;
+            border-radius: 4px;
+            color: #fff;
+            transition: background 0.3s;
+        }
+
+        .product-card button:hover {
+            background: #e67e22;
+        }
+
+        /* Contact Section */
+        .contact {
+            background: #f7e8d5;
             padding: 2rem;
             text-align: center;
         }
 
-        .appointment h2 {
-            color: #264653;
+        .contact h2 {
+            color: #3c2005;
             margin-bottom: 1rem;
         }
 
-        .appointment form {
+        .contact form {
             max-width: 600px;
             margin: 0 auto;
             display: flex;
@@ -172,48 +193,30 @@
             gap: 1rem;
         }
 
-        .appointment input, .appointment select, .appointment textarea {
+        .contact input, .contact textarea {
             padding: 0.5rem;
             border: 1px solid #ccc;
             border-radius: 4px;
             background: #fff;
         }
 
-        .appointment button {
-            background: #264653;
-            color: #fff;
+        .contact button {
+            background: #3c2005;
+            color: #fff5e6;
             border: none;
             padding: 0.75rem;
             cursor: pointer;
             border-radius: 4px;
         }
 
-        .appointment button:hover {
-            background: #2a9d8f;
-        }
-
-        /* Contact Section */
-        .contact {
-            max-width: 1200px;
-            margin: 2rem auto;
-            padding: 0 1rem;
-            text-align: center;
-        }
-
-        .contact h2 {
-            color: #264653;
-            margin-bottom: 1rem;
-        }
-
-        .contact p {
-            margin-bottom: 1rem;
-            color: #7f8c8d;
+        .contact button:hover {
+            background: #4a2c0a;
         }
 
         /* Footer */
         footer {
-            background: #264653;
-            color: #fff;
+            background: #3c2005;
+            color: #fff5e6;
             text-align: center;
             padding: 1rem;
             margin-top: 2rem;
@@ -222,22 +225,21 @@
         /* Responsive Design */
         @media (max-width: 768px) {
             .hero h2 {
-                font-size: 2rem;
+                font-size: 2.5rem;
             }
 
- _
+            nav ul {
+                flex-direction: column;
+                gap: 1rem;
+            }
 
-        nav ul {
-            flex-direction: column;
-            gap: 1rem;
-        }
+            nav ul li {
+                margin-left: 0;
+            }
 
-        nav ul li {
-            margin-left: 0;
-        }
-
-        .appointment form {
-            padding: 0 1rem;
+            .product-card button {
+                width: 100%;
+            }
         }
     </style>
 </head>
@@ -245,11 +247,10 @@
     <!-- HTML -->
     <header>
         <nav>
-            <h1>Doctor Kanchana Vet Clinic</h1>
+            <h1>Modesh Hot Cafe</h1>
             <ul>
                 <li><a href="#home">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#appointment">Appointment</a></li>
+                <li><a href="#products">Products</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -257,83 +258,104 @@
 
     <section class="hero" id="home">
         <div class="hero-content">
-            <h2>Doctor Kanchana Vet Clinic</h2>
-            <p>Compassionate Care for Your Beloved Pets</p>
+            <h2>Welcome to Modesh Hot Cafe</h2>
+            <p>Savor the Finest Teas & Coffees in a Cozy Ambiance</p>
         </div>
         <div class="wave"></div>
     </section>
 
-    <section class="services" id="services">
-        <h2>Our Services</h2>
-        <div class="service-grid">
-            <div class="service-card">
-                <img src="https://images.unsplash.com/photo-1583336663277-620963532e4e" alt="Pet Checkup">
-                <h3>General Checkups</h3>
-                <p>Routine health examinations to keep your pet in top condition.</p>
+    <section class="products" id="products">
+        <h2>Our Menu</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1601024445121-e5b07f69ff31" alt="Green Tea">
+                <h3>Green Tea</h3>
+                <p>Refreshing and antioxidant-rich green tea.</p>
+                <p class="price">$4.99</p>
+                <button onclick="addToCart('Green Tea', 4.99)">Add to Cart</button>
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                    <input type="hidden" name="cmd" value="_s-xclick">
+                    <input type="hidden" name="hosted_button_id" value="YOUR_PAYPAL_BUTTON_ID">
+                    <input type="hidden" name="item_name" value="Green Tea">
+                    <input type="hidden" name="amount" value="4.99">
+                    <input type="hidden" name="currency_code" value="USD">
+                    <button type="submit">Buy Now</button>
+                </form>
             </div>
-            <div class="service-card">
-                <img src="https://images.unsplash.com/photo-1594721654665-4ab5645b8e5b" alt="Surgery">
-                <h3>Surgery</h3>
-                <p>Expert surgical care for your pet's medical needs.</p>
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1610631087216-8a5b1b7028ce" alt="Black Tea">
+                <h3>Black Tea</h3>
+                <p>Robust and bold black tea blend.</p>
+                <p class="price">$5.49</p>
+                <button onclick="addToCart('Black Tea', 5.49)">Add to Cart</button>
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                    <input type="hidden" name="cmd" value="_s-xclick">
+                    <input type="hidden" name="hosted_button_id" value="YOUR_PAYPAL_BUTTON_ID">
+                    <input type="hidden" name="item_name" value="Black Tea">
+                    <input type="hidden" name="amount" value="5.49">
+                    <input type="hidden" name="currency_code" value="USD">
+                    <button type="submit">Buy Now</button>
+                </form>
             </div>
-            <div class="service-card">
-                <img src="https://images.unsplash.com/photo-1608272796830-4a22986c2e64" alt="Vaccinations">
-                <h3>Vaccinations</h3>
-                <p>Protect your pet with our vaccination programs.</p>
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1601024445121-e5b07f69ff31" alt="Mocha Latte">
+                <h3>Mocha Latte</h3>
+                <p>Rich coffee with chocolatey goodness.</p>
+                <p class="price">$6.99</p>
+                <button onclick="addToCart('Mocha Latte', 6.99)">Add to Cart</button>
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                    <input type="hidden" name="cmd" value="_s-xclick">
+                    <input type="hidden" name="hosted_button_id" value="YOUR_PAYPAL_BUTTON_ID">
+                    <input type="hidden" name="item_name" value="Mocha Latte">
+                    <input type="hidden" name="amount" value="6.99">
+                    <input type="hidden" name="currency_code" value="USD">
+                    <button type="submit">Buy Now</button>
+                </form>
             </div>
         </div>
     </section>
 
-    <section class="appointment" id="appointment">
-        <h2>Book an Appointment</h2>
-        <form id="appointment-form">
-            <input type="text" id="owner-name" placeholder="Your Name" required>
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="Your Name" required>
             <input type="email" id="email" placeholder="Your Email" required>
-            <input type="text" id="pet-name" placeholder="Pet's Name" required>
-            <select id="service" required>
-                <option value="" disabled selected>Select Service</option>
-                <option value="Checkup">General Checkup</option>
-                <option value="Surgery">Surgery</option>
-                <option value="Vaccination">Vaccination</option>
-            </select>
-            <input type="date" id="date" required>
-            <textarea id="notes" placeholder="Additional Notes" rows="5"></textarea>
-            <button type="submit">Book Appointment</button>
+            <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
         </form>
     </section>
 
-    <section class="contact" id="contact">
-        <h2>Contact Us</h2>
-        <p>Phone: (123) 456-7890</p>
-        <p>Email: info@doctorkanchanavetclinic.com</p>
-        <p>Address: 123 Pet Care Lane, Animal City, AC 12345</p>
-    </section>
-
     <footer>
-        <p>© 2025 Doctor Kanchana Vet Clinic. All rights reserved.</p>
+        <p>© 2025 Modesh Hot Cafe. All rights reserved.</p>
     </footer>
 
     <script>
         // JavaScript
-        // Appointment Form Handling
-        const form = document.getElementById('appointment-form');
+        // Cart functionality
+        let cart = [];
+
+        function addToCart(item, price) {
+            cart.push({ item, price });
+            alert(`${item} added to cart! Total items: ${cart.length}`);
+        }
+
+        // Form submission
+        const form = document.getElementById('contact-form');
         form.addEventListener('submit', (e) => {
             e.preventDefault();
-            const ownerName = document.getElementById('owner-name').value;
+            const name = document.getElementById('name').value;
             const email = document.getElementById('email').value;
-            const petName = document.getElementById('pet-name').value;
-            const service = document.getElementById('service').value;
-            const date = document.getElementById('date').value;
+            const message = document.getElementById('message').value;
 
-            if (ownerName && email && petName && service && date) {
-                alert(`Appointment booked for ${petName} with ${ownerName} on ${date} for ${service}!`);
+            if (name && email && message) {
+                alert(`Thank you, ${name}! Your message has been sent.`);
                 form.reset();
             } else {
-                alert('Please fill out all required fields.');
+                alert('Please fill out all fields.');
             }
         });
 
-        // Smooth Scroll for Navigation
+        // Smooth scroll for navigation
         document.querySelectorAll('nav a').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 e.preventDefault();
